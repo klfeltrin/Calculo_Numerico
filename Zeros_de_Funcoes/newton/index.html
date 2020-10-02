@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="#">
+      <div>
+        (
+        <input type="text" name="quinto" id="quinto" value="" />
+        <label for="entrada">x^5</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="quarto" id="quarto" value="" />
+        <label for="entrada">x^4</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="terceiro" id="terceiro" value="" />
+        <label for="entrada">x^3</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="segundo" id="segundo" value="-5" />
+        <label for="entrada">x^2</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="primeiro" id="primeiro" value="4" />
+        <label for="entrada">x^1</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="zero" id="zero" value="14" />
+        <label for="entrada">x^0</label>
+        )
+      </div>
+
+      <div>
+        <button type="submit" onclick="newBinomioNewton(event)">ENVIAR-Newton</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div style="width: auto;margin: 32px auto;display: flex;">
+      (
+      <input type="text" name="valorX" id="valorX" value="2" />
+      <label for="entrada">Valor de X</label>
+      )
+      (
+      <button onclick=" limpartabela()">Limpar</button>
+      )
+    </div>
+    
+  </div>
+
+  <div class="container">
+    <table id="resultado">
+      <tr id="header">
+        <th>Xn</th>
+        <th>F(x)</th>
+        <th>F'(x)</th>
+        <th>Proximo Xn</th>
+      </tr>
+      
+    </table>
+  </div>
+
+  <script src="./estruturaNewton.js"></script>
+
+
+</body>
+
+</html>

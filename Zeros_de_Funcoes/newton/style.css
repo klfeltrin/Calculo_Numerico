@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border-bottom: 1px solid #c3c3c3;
+  display: flex;
+}
+
+form, table {
+  width: auto;
+  margin: 32px auto;
+  display: flex;
+}
+
+input {
+  width: 24px;
+  text-align: center;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  
+}
+
+th, td {
+  padding: 5px;
+}
