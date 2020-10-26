@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Método de Eliminação de Gauss</title>
+    <link rel="shotcut icon" href="imagens/icon.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Método LU</h1>
+    </header>
+    
+    <section>
+        <h4>Digite os valores de A:</h4>
+
+        <textarea class="txt-entrada" id="txt-entradaA" cols="15" rows="5" maxlength="99"></textarea>
+
+        <h4>Digite os valores de B:</h4>
+        
+        <textarea class="txt-entrada" id="txt-entradaB" cols="5" rows="5" maxlength="50"></textarea>
+        <br>
+        
+        <button id="btn" class="btn-calcular" onclick="verificar()">CALCULAR</button>
+
+        <button id="btn" class="btn-limpar" onclick="limpar()">LIMPAR</button>
+        
+        <div id="res">
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
