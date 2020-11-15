@@ -37,12 +37,20 @@ function metodoGauss(a, b) {
         exibirMatriz(a, b)
     }
 
+    // Solução do Sistema
     res.innerHTML += '<br>' + 'Solução: ' + '<br>'
 
-    solucao.push(b[0][0][b[0][0].length - 1] / a[0][a[0][0].length - 1][a[0][0].length - 1])
-    console.log(solucao[0])
-    for(var i = auxA[0][0].length - 1; i >= 0; i--){
-        solucao.push()
+    var X = [];
+    for(i = a[0][0].length - 1; i >= 0; i--){
+        X[i] = b[0][0][i];
+        for(j = i + 1; j < a[0][0].length; j++){
+            X[i] = X[i] - X[j] * a[0][i][j];
+        }
+        X[i] = X[i] / a[0][i][i];
+    }
+    
+    for(i = 0; i < X.length; i++){
+        res.innerHTML += 'X' + i+ ' = ' + X[i] + '<br>'
     }
 }
 
